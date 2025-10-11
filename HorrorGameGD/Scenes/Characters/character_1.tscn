@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://ouyqn2u7lt0m"]
+
+[ext_resource type="ArrayMesh" uid="uid://lhcpw2lll222" path="res://Assets/LowPolyHuman.obj" id="1_mh4fh"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3gmyj"]
+height = 3.152069
+
+[node name="Character1" type="CharacterBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5654087, 0)
+shape = SubResource("CapsuleShape3D_3gmyj")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.939371, -0.15100306)
+fov = 103.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.436243, 0)
+mesh = ExtResource("1_mh4fh")
