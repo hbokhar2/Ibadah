@@ -85,12 +85,12 @@ clean: CMakeFiles/HorrorGame.dir/clean
 CMakeFiles/HorrorGame.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles --progress-num=1,2 "Built target HorrorGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles --progress-num=1,2,3,4,5 "Built target HorrorGame"
 .PHONY : CMakeFiles/HorrorGame.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/HorrorGame.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/HorrorGame.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles 0
 .PHONY : CMakeFiles/HorrorGame.dir/rule
@@ -102,7 +102,7 @@ HorrorGame: CMakeFiles/HorrorGame.dir/rule
 # codegen rule for target.
 CMakeFiles/HorrorGame.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles --progress-num=1,2 "Finished codegen for target HorrorGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target HorrorGame"
 .PHONY : CMakeFiles/HorrorGame.dir/codegen
 
 # clean rule for target.
@@ -117,6 +117,7 @@ CMakeFiles/HorrorGame.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

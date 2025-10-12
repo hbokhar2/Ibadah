@@ -92,13 +92,6 @@ all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles 0
 .PHONY : all
 
-# The main codegen target
-codegen: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles 0
-.PHONY : codegen
-
 # The main clean target
 clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
@@ -120,6 +113,7 @@ preinstall/fast:
 
 # clear depends
 depend:
+	$(CMAKE_COMMAND) -P /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -135,6 +129,30 @@ HorrorGame: cmake_check_build_system
 HorrorGame/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/build
 .PHONY : HorrorGame/fast
+
+GDExtension.o: GDExtension.cpp.o
+.PHONY : GDExtension.o
+
+# target to build an object file
+GDExtension.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/GDExtension.cpp.o
+.PHONY : GDExtension.cpp.o
+
+GDExtension.i: GDExtension.cpp.i
+.PHONY : GDExtension.i
+
+# target to preprocess a source file
+GDExtension.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/GDExtension.cpp.i
+.PHONY : GDExtension.cpp.i
+
+GDExtension.s: GDExtension.cpp.s
+.PHONY : GDExtension.s
+
+# target to generate assembly for a file
+GDExtension.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/GDExtension.cpp.s
+.PHONY : GDExtension.cpp.s
 
 GameSettings/Settings.o: GameSettings/Settings.cpp.o
 .PHONY : GameSettings/Settings.o
@@ -160,19 +178,75 @@ GameSettings/Settings.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.s
 .PHONY : GameSettings/Settings.cpp.s
 
+Scenes/Home/Home.o: Scenes/Home/Home.cpp.o
+.PHONY : Scenes/Home/Home.o
+
+# target to build an object file
+Scenes/Home/Home.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o
+.PHONY : Scenes/Home/Home.cpp.o
+
+Scenes/Home/Home.i: Scenes/Home/Home.cpp.i
+.PHONY : Scenes/Home/Home.i
+
+# target to preprocess a source file
+Scenes/Home/Home.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.i
+.PHONY : Scenes/Home/Home.cpp.i
+
+Scenes/Home/Home.s: Scenes/Home/Home.cpp.s
+.PHONY : Scenes/Home/Home.s
+
+# target to generate assembly for a file
+Scenes/Home/Home.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.s
+.PHONY : Scenes/Home/Home.cpp.s
+
+Scenes/Home/HomeMapLoader/HomeMapLoader.o: Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o
+.PHONY : Scenes/Home/HomeMapLoader/HomeMapLoader.o
+
+# target to build an object file
+Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o
+.PHONY : Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o
+
+Scenes/Home/HomeMapLoader/HomeMapLoader.i: Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.i
+.PHONY : Scenes/Home/HomeMapLoader/HomeMapLoader.i
+
+# target to preprocess a source file
+Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.i
+.PHONY : Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.i
+
+Scenes/Home/HomeMapLoader/HomeMapLoader.s: Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.s
+.PHONY : Scenes/Home/HomeMapLoader/HomeMapLoader.s
+
+# target to generate assembly for a file
+Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.s
+.PHONY : Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... HorrorGame"
+	@echo "... GDExtension.o"
+	@echo "... GDExtension.i"
+	@echo "... GDExtension.s"
 	@echo "... GameSettings/Settings.o"
 	@echo "... GameSettings/Settings.i"
 	@echo "... GameSettings/Settings.s"
+	@echo "... Scenes/Home/Home.o"
+	@echo "... Scenes/Home/Home.i"
+	@echo "... Scenes/Home/Home.s"
+	@echo "... Scenes/Home/HomeMapLoader/HomeMapLoader.o"
+	@echo "... Scenes/Home/HomeMapLoader/HomeMapLoader.i"
+	@echo "... Scenes/Home/HomeMapLoader/HomeMapLoader.s"
 .PHONY : help
 
 
@@ -184,6 +258,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
