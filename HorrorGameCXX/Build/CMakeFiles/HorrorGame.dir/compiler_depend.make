@@ -89,8 +89,9 @@ CMakeFiles/HorrorGame.dir/GDExtension.cpp.o: /home/B0LD/Documents/Projects/Horro
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector3i.hpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector4.hpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector4i.hpp \
-  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/Home.h \
-  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/HomeMapLoader/HomeMapLoader.h \
+  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/GDExtension.h \
+  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/HomeMapLoader/HomeMapLoader.h \
+  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/Main.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -331,18 +332,12 @@ CMakeFiles/HorrorGame.dir/GDExtension.cpp.o: /home/B0LD/Documents/Projects/Horro
 CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.o: /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/GameSettings/Settings.cpp \
   /usr/include/stdc-predef.h
 
-CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o: /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/Home.cpp \
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o: /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gdextension/gdextension_interface.h \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/class_db_singleton.hpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/global_constants.hpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/global_constants_binds.hpp \
-  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event.hpp \
-  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event_from_window.hpp \
-  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event_key.hpp \
-  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event_mouse.hpp \
-  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event_with_modifiers.hpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/node.hpp \
-  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/node3d.hpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/object.hpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/packed_scene.hpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/ref_counted.hpp \
@@ -419,8 +414,7 @@ CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o: /home/B0LD/Documents/Projects/
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector3i.hpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector4.hpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector4i.hpp \
-  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/Home.h \
-  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/HomeMapLoader/HomeMapLoader.h \
+  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/HomeMapLoader/HomeMapLoader.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -658,12 +652,18 @@ CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o: /home/B0LD/Documents/Projects/
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
 
-CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o: /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp \
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o: /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/Main.cpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gdextension/gdextension_interface.h \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/class_db_singleton.hpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/global_constants.hpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/global_constants_binds.hpp \
+  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event.hpp \
+  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event_from_window.hpp \
+  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event_key.hpp \
+  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event_mouse.hpp \
+  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event_with_modifiers.hpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/node.hpp \
+  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/node3d.hpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/object.hpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/packed_scene.hpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/ref_counted.hpp \
@@ -740,7 +740,8 @@ CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o: /home/B
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector3i.hpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector4.hpp \
   /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector4i.hpp \
-  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/HomeMapLoader/HomeMapLoader.h \
+  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/HomeMapLoader/HomeMapLoader.h \
+  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/Main.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -996,13 +997,13 @@ libHorrorGame.so: /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/bin/libgodo
   /usr/lib/libmvec.so.1 \
   CMakeFiles/HorrorGame.dir/GDExtension.cpp.o \
   CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.o \
-  CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o \
-  CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o
+  CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o \
+  CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o
 
 
-CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o:
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o:
 
-CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o:
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o:
 
 /usr/lib/libmvec.so.1:
 
@@ -1019,6 +1020,8 @@ CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o:
 /usr/lib/libm.so:
 
 /usr/lib/libgcc_s.so.1:
+
+/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h:
 
@@ -1126,8 +1129,6 @@ CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.o:
 
 /usr/include/bits/getopt_core.h:
 
-/usr/include/bits/floatn.h:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h:
 
 /usr/include/c++/15.2.1/ratio:
@@ -1170,15 +1171,17 @@ CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.o:
 
 /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/quaternion.hpp:
 
+/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/HomeMapLoader/HomeMapLoader.h:
+
 /usr/include/alloca.h:
 
-/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/Home.h:
+/usr/include/bits/floatn.h:
 
-/usr/lib/libc.so:
+/home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/variant/packed_float64_array.hpp:
 
-/usr/include/c++/15.2.1/tr1/beta_function.tcc:
+/home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/core/defs.hpp:
 
-/usr/include/bits/pthreadtypes.h:
+/usr/include/c++/15.2.1/bits/stl_bvector.h:
 
 /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector3i.hpp:
 
@@ -1224,8 +1227,6 @@ CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.o:
 
 /usr/include/c++/15.2.1/bits/invoke.h:
 
-/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp:
-
 /usr/include/c++/15.2.1/bits/stl_function.h:
 
 /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/callable_method_pointer.hpp:
@@ -1245,12 +1246,6 @@ CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.o:
 /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/templates/sort_array.hpp:
 
 /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/templates/search_array.hpp:
-
-/home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/variant/packed_float64_array.hpp:
-
-/home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/core/defs.hpp:
-
-/usr/include/c++/15.2.1/bits/stl_bvector.h:
 
 /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/variant/node_path.hpp:
 
@@ -1314,8 +1309,6 @@ CMakeFiles/HorrorGame.dir/GDExtension.cpp.o:
 
 /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/class_db_singleton.hpp:
 
-/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/HomeMapLoader/HomeMapLoader.h:
-
 /usr/include/c++/15.2.1/bits/concept_check.h:
 
 /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/core/class_db.hpp:
@@ -1325,8 +1318,6 @@ CMakeFiles/HorrorGame.dir/GDExtension.cpp.o:
 /usr/include/bits/fp-logb.h:
 
 /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/core/method_ptrcall.hpp:
-
-/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/Home.cpp:
 
 /usr/include/c++/15.2.1/bits/chrono.h:
 
@@ -1422,6 +1413,8 @@ CMakeFiles/HorrorGame.dir/GDExtension.cpp.o:
 
 /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/classes/wrapped.hpp:
 
+/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/GDExtension.h:
+
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h:
 
 /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/templates/vector.hpp:
@@ -1432,9 +1425,9 @@ CMakeFiles/HorrorGame.dir/GDExtension.cpp.o:
 
 /usr/include/asm/types.h:
 
-/home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/char_string.hpp:
-
 /usr/include/bits/posix2_lim.h:
+
+/home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/char_string.hpp:
 
 /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/core/error_macros.hpp:
 
@@ -1485,6 +1478,12 @@ CMakeFiles/HorrorGame.dir/GDExtension.cpp.o:
 /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/core/binder_common.hpp:
 
 /usr/include/bits/pthreadtypes-arch.h:
+
+/usr/lib/libc.so:
+
+/usr/include/c++/15.2.1/tr1/beta_function.tcc:
+
+/usr/include/bits/pthreadtypes.h:
 
 /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/variant/builtin_binds.hpp:
 
@@ -1666,6 +1665,8 @@ CMakeFiles/HorrorGame.dir/GDExtension.cpp.o:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
+/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/Main.h:
+
 /usr/include/c++/15.2.1/bits/uses_allocator.h:
 
 /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/variant/packed_vector2_array.hpp:
@@ -1681,6 +1682,8 @@ CMakeFiles/HorrorGame.dir/GDExtension.cpp.o:
 /usr/include/c++/15.2.1/cmath:
 
 /usr/include/c++/15.2.1/cstdint:
+
+/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/Main.cpp:
 
 /usr/include/c++/15.2.1/cstring:
 

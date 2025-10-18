@@ -178,53 +178,53 @@ GameSettings/Settings.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.s
 .PHONY : GameSettings/Settings.cpp.s
 
-Scenes/Home/Home.o: Scenes/Home/Home.cpp.o
-.PHONY : Scenes/Home/Home.o
+Scenes/MainScene/HomeMapLoader/HomeMapLoader.o: Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o
+.PHONY : Scenes/MainScene/HomeMapLoader/HomeMapLoader.o
 
 # target to build an object file
-Scenes/Home/Home.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o
-.PHONY : Scenes/Home/Home.cpp.o
+Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o
+.PHONY : Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o
 
-Scenes/Home/Home.i: Scenes/Home/Home.cpp.i
-.PHONY : Scenes/Home/Home.i
+Scenes/MainScene/HomeMapLoader/HomeMapLoader.i: Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.i
+.PHONY : Scenes/MainScene/HomeMapLoader/HomeMapLoader.i
 
 # target to preprocess a source file
-Scenes/Home/Home.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.i
-.PHONY : Scenes/Home/Home.cpp.i
+Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.i
+.PHONY : Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.i
 
-Scenes/Home/Home.s: Scenes/Home/Home.cpp.s
-.PHONY : Scenes/Home/Home.s
+Scenes/MainScene/HomeMapLoader/HomeMapLoader.s: Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.s
+.PHONY : Scenes/MainScene/HomeMapLoader/HomeMapLoader.s
 
 # target to generate assembly for a file
-Scenes/Home/Home.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.s
-.PHONY : Scenes/Home/Home.cpp.s
+Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.s
+.PHONY : Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.s
 
-Scenes/Home/HomeMapLoader/HomeMapLoader.o: Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o
-.PHONY : Scenes/Home/HomeMapLoader/HomeMapLoader.o
+Scenes/MainScene/Main.o: Scenes/MainScene/Main.cpp.o
+.PHONY : Scenes/MainScene/Main.o
 
 # target to build an object file
-Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o
-.PHONY : Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o
+Scenes/MainScene/Main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o
+.PHONY : Scenes/MainScene/Main.cpp.o
 
-Scenes/Home/HomeMapLoader/HomeMapLoader.i: Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.i
-.PHONY : Scenes/Home/HomeMapLoader/HomeMapLoader.i
+Scenes/MainScene/Main.i: Scenes/MainScene/Main.cpp.i
+.PHONY : Scenes/MainScene/Main.i
 
 # target to preprocess a source file
-Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.i
-.PHONY : Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.i
+Scenes/MainScene/Main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.i
+.PHONY : Scenes/MainScene/Main.cpp.i
 
-Scenes/Home/HomeMapLoader/HomeMapLoader.s: Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.s
-.PHONY : Scenes/Home/HomeMapLoader/HomeMapLoader.s
+Scenes/MainScene/Main.s: Scenes/MainScene/Main.cpp.s
+.PHONY : Scenes/MainScene/Main.s
 
 # target to generate assembly for a file
-Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.s
-.PHONY : Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.s
+Scenes/MainScene/Main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HorrorGame.dir/build.make CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.s
+.PHONY : Scenes/MainScene/Main.cpp.s
 
 # Help Target
 help:
@@ -241,12 +241,12 @@ help:
 	@echo "... GameSettings/Settings.o"
 	@echo "... GameSettings/Settings.i"
 	@echo "... GameSettings/Settings.s"
-	@echo "... Scenes/Home/Home.o"
-	@echo "... Scenes/Home/Home.i"
-	@echo "... Scenes/Home/Home.s"
-	@echo "... Scenes/Home/HomeMapLoader/HomeMapLoader.o"
-	@echo "... Scenes/Home/HomeMapLoader/HomeMapLoader.i"
-	@echo "... Scenes/Home/HomeMapLoader/HomeMapLoader.s"
+	@echo "... Scenes/MainScene/HomeMapLoader/HomeMapLoader.o"
+	@echo "... Scenes/MainScene/HomeMapLoader/HomeMapLoader.i"
+	@echo "... Scenes/MainScene/HomeMapLoader/HomeMapLoader.s"
+	@echo "... Scenes/MainScene/Main.o"
+	@echo "... Scenes/MainScene/Main.i"
+	@echo "... Scenes/MainScene/Main.s"
 .PHONY : help
 
 

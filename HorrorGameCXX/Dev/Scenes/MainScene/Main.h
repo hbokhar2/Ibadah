@@ -11,12 +11,12 @@
 
 using namespace godot;
 
-class Home : public Node {
-	GDCLASS(Home, Node);
+class Main : public Node {
+	GDCLASS(Main, Node);
 
 	public:
-		Home();
-		~Home();
+		Main();
+		~Main();
 
 		void _init();                   
 		void _ready() override;        
@@ -26,6 +26,6 @@ class Home : public Node {
 		static void _bind_methods();
 
 	private:
-		HomeMapLoader m_mapLoader;
+		HomeMapLoader MapLoader;
 		Node3D* character1;
 };

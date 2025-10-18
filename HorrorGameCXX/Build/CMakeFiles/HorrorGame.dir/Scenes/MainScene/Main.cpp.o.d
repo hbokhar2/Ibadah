@@ -1,10 +1,10 @@
-CMakeFiles/HorrorGame.dir/GDExtension.cpp.o: \
- /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/GDExtension.cpp \
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o: \
+ /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/Main.cpp \
  /usr/include/stdc-predef.h \
- /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/GDExtension.h \
- /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/include/godot_cpp/godot.hpp \
- /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/gdextension/gdextension_interface.h \
- /usr/include/c++/15.2.1/cstddef \
+ /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/Main.h \
+ /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/gen/include/godot_cpp/classes/node.hpp \
+ /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/gen/include/godot_cpp/classes/global_constants.hpp \
+ /usr/include/c++/15.2.1/cstdint \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -13,15 +13,17 @@ CMakeFiles/HorrorGame.dir/GDExtension.cpp.o: \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
  /usr/include/c++/15.2.1/pstl/pstl_config.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
- /usr/include/c++/15.2.1/bits/version.h /usr/include/c++/15.2.1/cstdint \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/bits/time64.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
+ /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/include/godot_cpp/classes/ref.hpp \
  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/include/godot_cpp/core/defs.hpp \
+ /usr/include/c++/15.2.1/cstddef \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
+ /usr/include/c++/15.2.1/bits/version.h \
  /usr/include/c++/15.2.1/type_traits /usr/include/c++/15.2.1/utility \
  /usr/include/c++/15.2.1/bits/stl_relops.h \
  /usr/include/c++/15.2.1/bits/stl_pair.h \
@@ -32,10 +34,6 @@ CMakeFiles/HorrorGame.dir/GDExtension.cpp.o: \
  /usr/include/c++/15.2.1/ext/numeric_traits.h \
  /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
  /usr/include/c++/15.2.1/ext/type_traits.h \
- /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/Main.h \
- /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/gen/include/godot_cpp/classes/node.hpp \
- /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/gen/include/godot_cpp/classes/global_constants.hpp \
- /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/include/godot_cpp/classes/ref.hpp \
  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/gen/include/godot_cpp/classes/object.hpp \
  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/include/godot_cpp/classes/wrapped.hpp \
  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/include/godot_cpp/core/memory.hpp \
@@ -93,6 +91,8 @@ CMakeFiles/HorrorGame.dir/GDExtension.cpp.o: \
  /usr/include/c++/15.2.1/bits/functexcept.h \
  /usr/include/c++/15.2.1/bits/exception_defines.h \
  /usr/include/c++/15.2.1/bits/std_mutex.h \
+ /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/include/godot_cpp/godot.hpp \
+ /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/gdextension/gdextension_interface.h \
  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/include/godot_cpp/core/property_info.hpp \
  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/include/godot_cpp/variant/variant.hpp \
  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/gen/include/godot_cpp/variant/array.hpp \

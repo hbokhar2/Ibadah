@@ -15,8 +15,8 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/B0LD/Documents/Projects
 set(OLD_GLOB
   "/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/GDExtension.cpp"
   "/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/GameSettings/Settings.cpp"
-  "/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/Home.cpp"
-  "/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp"
+  "/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp"
+  "/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/Main.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

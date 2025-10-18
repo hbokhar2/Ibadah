@@ -1,34 +1,33 @@
-#include "Home.h"
+#include "Main.h"
 
 #include "godot_cpp/variant/utility_functions.hpp"
 #include "godot_cpp/variant/vector3.hpp"
 
-Home::Home(){
+Main::Main(){
 	character1 = nullptr;
 }
 
-Home::~Home(){}
+Main::~Main(){}
 
-void Home::_bind_methods(){
+void Main::_bind_methods(){
 }
 
-void Home::_init(){}
+void Main::_init(){}
 
-void Home::_ready(){
-	if(m_mapLoader.initialize()){
-		add_child(m_mapLoader.get_home_instance());
-		add_child(m_mapLoader.get_character_instance());
+void Main::_ready(){
+	if(MapLoader.initialize()){
+		add_child(MapLoader.get_character_instance());
 		
-		character1 = Object::cast_to<Node3D> (m_mapLoader.get_character_instance());
+		character1 = Object::cast_to<Node3D> (MapLoader.get_character_instance());
 		if(character1){
 			character1 -> set_position(Vector3(0,0,0));
 		}
 	}
 }
 
-void Home::_process(double delta){}
+void Main::_process(double delta){}
 
-void Home::_input(const Ref<InputEvent>& event){
+void Main::_input(const Ref<InputEvent>& event){
 	if(event -> is_class("InputEventKey")){
 		InputEventKey* keyEvent = Object::cast_to<InputEventKey>(event.ptr());
 		if(keyEvent && keyEvent -> is_pressed()){

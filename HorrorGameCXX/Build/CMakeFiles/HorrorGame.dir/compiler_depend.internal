@@ -90,8 +90,9 @@ CMakeFiles/HorrorGame.dir/GDExtension.cpp.o
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector3i.hpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector4.hpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector4i.hpp
- /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/Home.h
- /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/HomeMapLoader/HomeMapLoader.h
+ /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/GDExtension.h
+ /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/HomeMapLoader/HomeMapLoader.h
+ /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/Main.h
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h
@@ -333,19 +334,13 @@ CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.o
  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/GameSettings/Settings.cpp
  /usr/include/stdc-predef.h
 
-CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o
- /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/Home.cpp
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o
+ /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gdextension/gdextension_interface.h
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/class_db_singleton.hpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/global_constants.hpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/global_constants_binds.hpp
- /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event.hpp
- /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event_from_window.hpp
- /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event_key.hpp
- /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event_mouse.hpp
- /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event_with_modifiers.hpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/node.hpp
- /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/node3d.hpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/object.hpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/packed_scene.hpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/ref_counted.hpp
@@ -422,8 +417,7 @@ CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector3i.hpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector4.hpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector4i.hpp
- /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/Home.h
- /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/HomeMapLoader/HomeMapLoader.h
+ /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/HomeMapLoader/HomeMapLoader.h
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h
@@ -661,13 +655,19 @@ CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
 
-CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o
- /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o
+ /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/Main.cpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gdextension/gdextension_interface.h
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/class_db_singleton.hpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/global_constants.hpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/global_constants_binds.hpp
+ /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event.hpp
+ /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event_from_window.hpp
+ /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event_key.hpp
+ /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event_mouse.hpp
+ /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/input_event_with_modifiers.hpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/node.hpp
+ /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/node3d.hpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/object.hpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/packed_scene.hpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/gen/include/godot_cpp/classes/ref_counted.hpp
@@ -744,7 +744,8 @@ CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector3i.hpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector4.hpp
  /home/B0LD/Documents/Projects/HorrorGame/godot-cpp/include/godot_cpp/variant/vector4i.hpp
- /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/HomeMapLoader/HomeMapLoader.h
+ /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/HomeMapLoader/HomeMapLoader.h
+ /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/Main.h
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h
@@ -1001,6 +1002,6 @@ libHorrorGame.so
  /usr/lib/libmvec.so.1
  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles/HorrorGame.dir/GDExtension.cpp.o
  /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.o
- /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o
- /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o
+ /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o
+ /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o
 

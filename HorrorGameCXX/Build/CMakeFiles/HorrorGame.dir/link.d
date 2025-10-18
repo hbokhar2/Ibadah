@@ -3,8 +3,8 @@ libHorrorGame.so: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
   CMakeFiles/HorrorGame.dir/GDExtension.cpp.o \
   CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.o \
-  CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o \
-  CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o \
+  CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o \
+  CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o \
   /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/bin/libgodot-cpp.linux.template_debug.x86_64.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
@@ -39,9 +39,9 @@ CMakeFiles/HorrorGame.dir/GDExtension.cpp.o:
 
 CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.o:
 
-CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o:
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o:
 
-CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o:
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o:
 
 /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/bin/libgodot-cpp.linux.template_debug.x86_64.a:
 

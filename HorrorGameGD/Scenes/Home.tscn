@@ -2,4 +2,4 @@
 
 [node name="Home" type="Node3D"]
 
-[node name="Exec" type="Node" parent="."]
+[node name="Main" type="Main" parent="."]

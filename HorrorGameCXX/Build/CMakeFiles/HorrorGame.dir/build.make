@@ -100,48 +100,48 @@ CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/GameSettings/Settings.cpp -o CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.s
 
-CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o: CMakeFiles/HorrorGame.dir/flags.make
-CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o: /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/Home.cpp
-CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o: CMakeFiles/HorrorGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o -MF CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o.d -o CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o -c /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/Home.cpp
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o: CMakeFiles/HorrorGame.dir/flags.make
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o: /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o: CMakeFiles/HorrorGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o -MF CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o.d -o CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o -c /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp
 
-CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/Home.cpp > CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.i
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp > CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.i
 
-CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/Home.cpp -o CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.s
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp -o CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.s
 
-CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o: CMakeFiles/HorrorGame.dir/flags.make
-CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o: /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp
-CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o: CMakeFiles/HorrorGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o -MF CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o.d -o CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o -c /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o: CMakeFiles/HorrorGame.dir/flags.make
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o: /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/Main.cpp
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o: CMakeFiles/HorrorGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o -MF CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o.d -o CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o -c /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/Main.cpp
 
-CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp > CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.i
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/Main.cpp > CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.i
 
-CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp -o CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.s
+CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/Main.cpp -o CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.s
 
 # Object files for target HorrorGame
 HorrorGame_OBJECTS = \
 "CMakeFiles/HorrorGame.dir/GDExtension.cpp.o" \
 "CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.o" \
-"CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o" \
-"CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o"
+"CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o" \
+"CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o"
 
 # External object files for target HorrorGame
 HorrorGame_EXTERNAL_OBJECTS =
 
 libHorrorGame.so: CMakeFiles/HorrorGame.dir/GDExtension.cpp.o
 libHorrorGame.so: CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.o
-libHorrorGame.so: CMakeFiles/HorrorGame.dir/Scenes/Home/Home.cpp.o
-libHorrorGame.so: CMakeFiles/HorrorGame.dir/Scenes/Home/HomeMapLoader/HomeMapLoader.cpp.o
+libHorrorGame.so: CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o
+libHorrorGame.so: CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o
 libHorrorGame.so: CMakeFiles/HorrorGame.dir/build.make
 libHorrorGame.so: CMakeFiles/HorrorGame.dir/compiler_depend.ts
 libHorrorGame.so: /home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/../../godot-cpp/bin/libgodot-cpp.linux.template_debug.x86_64.a
