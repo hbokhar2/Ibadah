@@ -8,7 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/GDExtension.cpp" "CMakeFiles/HorrorGame.dir/GDExtension.cpp.o" "gcc" "CMakeFiles/HorrorGame.dir/GDExtension.cpp.o.d"
   "/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/GameSettings/Settings.cpp" "CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.o" "gcc" "CMakeFiles/HorrorGame.dir/GameSettings/Settings.cpp.o.d"
+  "/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp" "CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o" "gcc" "CMakeFiles/HorrorGame.dir/Scenes/MainScene/HomeMapLoader/HomeMapLoader.cpp.o.d"
+  "/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Dev/Scenes/MainScene/Main.cpp" "CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o" "gcc" "CMakeFiles/HorrorGame.dir/Scenes/MainScene/Main.cpp.o.d"
   "" "libHorrorGame.so" "gcc" "CMakeFiles/HorrorGame.dir/link.d"
   )
 
