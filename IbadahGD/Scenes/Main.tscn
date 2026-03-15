@@ -1,5 +1,15 @@
 [gd_scene format=3 uid="uid://be3acnwiqptbs"]
 
+[ext_resource type="PackedScene" uid="uid://c0mhgsb8jw515" path="res://Scenes/MapObjects/ModularStreet/ModularStreet.tscn" id="1_r150o"]
+
 [node name="Main" type="Node3D" unique_id=509180890]
 
+[node name="ModularStreet" parent="." unique_id=2077053198 instance=ExtResource("1_r150o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.46192372, 0, 0)
+
+[node name="MeshInstance3D" parent="ModularStreet" index="0" unique_id=1830235816]
+transform = Transform3D(1, 0, 0, 0, 2.220446e-16, 1, 0, -1, 2.220446e-16, 0.017698646, 0, -0.050421953)
+
 [node name="Main" type="Main" parent="." unique_id=992259748]
+
+[editable path="ModularStreet"]

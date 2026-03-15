@@ -1,0 +1,11 @@
+Model Information:
+* title:	Modular street + pavement wet LP
+* source:	https://sketchfab.com/3d-models/modular-street-pavement-wet-lp-c26aff37a7a948db96f5d35c81e4745c
+* author:	Dawid (https://sketchfab.com/Dawid.Gerula)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Modular street + pavement wet LP" (https://sketchfab.com/3d-models/modular-street-pavement-wet-lp-c26aff37a7a948db96f5d35c81e4745c) by Dawid (https://sketchfab.com/Dawid.Gerula) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

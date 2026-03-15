@@ -10,7 +10,7 @@ godot::Node* MainSceneLoader::getCharacterInstance(){
 
 bool MainSceneLoader::initialize(){
 
-	godot::Ref<godot::PackedScene> characterScene = godot::ResourceLoader::get_singleton() -> load("res://Scenes/Characters/duck.tscn");
+	godot::Ref<godot::PackedScene> characterScene = godot::ResourceLoader::get_singleton() -> load("res://Scenes/Characters/Duck.tscn");
 	if(characterScene.is_null()){
 		godot::UtilityFunctions::print("Failed to load duck.tscn: MainSceneLoader.cpp:12.");	
 		return false;

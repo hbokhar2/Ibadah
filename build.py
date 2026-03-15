@@ -24,14 +24,11 @@ def cmakeBuild(projectCXXPath, cmakePath) -> bool:
 def copySrcToGD(cmakePath, gdBinPath):
 
     try:
-        rmResult = subprocess.run(["rm", "-rf", (gdBinpath + "/libIbadah.so")])
+        cpResult = subprocess.run(["cp", (cmakePath + "/libIbadah.so"), gdBinPath])
+        return True;
     except:
-        try:
-            cpResult = subprocess.run(["cp", (cmakePath + "/libIbadah.so"), gdBinPath])
-            return True;
-        except:
-            print("Failed to copy over binary to Godot.")
-            return False;
+        print("Failed to copy over binary to Godot.")
+        return False;
 
 projectRoot, projectCXXPath, cmakePath, gdBinPath = getPaths()
 
