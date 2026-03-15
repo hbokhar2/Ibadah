@@ -1,3 +1,0 @@
-/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles/HorrorGame.dir
-/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles/edit_cache.dir
-/home/B0LD/Documents/Projects/HorrorGame/HorrorGameCXX/Build/CMakeFiles/rebuild_cache.dir

@@ -1,15 +1,40 @@
 import sys
-import pathlib
+import os
 import subprocess
 
-args = sys.argv[1:]
+def getPaths() -> list[str]:
 
-project_root = pathlib.Path(__file__).parent
-cmake_path = project_root / "HorrorGameCXX" / "Dev" 
-source_path = project_root / "HorrorGameCXX" / "Dev" 
-build_path = project_root/ "HorrorGameCXX" / "Build"
+    projectRoot = os.getenv("IBADAH")
+    projectCXXPath = projectRoot + "/IbadahCXX"
+    cmakePath = projectRoot + "/IbadahCXX/Build"
+    gdBinPath = projectRoot + "/IbadahGD/Bin" 
 
-build_path.mkdir(exist = True)
+    return projectRoot, projectCXXPath, cmakePath, gdBinPath
 
-subprocess.run(["cmake", "-S", str(source_path), "-B", str(build_path)], check=True)
-subprocess.run(["cmake", "-S", str(source_path), "-B", str(build_path)], check=True)
+def cmakeBuild(projectCXXPath, cmakePath) -> bool:
+
+    try:
+        buildSystemResult = subprocess.run(["cmake", "-B", cmakePath, "-S", (projectCXXPath + "/Dev")])
+        buildResult = subprocess.run(["cmake", "--build", cmakePath, "-j", "20"])
+        return True
+    except:
+        print("Failed to build project.")
+        return False
+
+def copySrcToGD(cmakePath, gdBinPath):
+
+    try:
+        rmResult = subprocess.run(["rm", "-rf", (gdBinpath + "/libIbadah.so")])
+    except:
+        try:
+            cpResult = subprocess.run(["cp", (cmakePath + "/libIbadah.so"), gdBinPath])
+            return True;
+        except:
+            print("Failed to copy over binary to Godot.")
+            return False;
+
+projectRoot, projectCXXPath, cmakePath, gdBinPath = getPaths()
+
+cmakeBuild(projectCXXPath, cmakePath)
+
+copySrcToGD(cmakePath, gdBinPath)

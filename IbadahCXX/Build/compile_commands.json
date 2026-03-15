@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/B0LD/Projects/Ibadah/IbadahCXX/Build",
+  "command": "/usr/bin/c++ -DIbadah_EXPORTS -I/home/B0LD/Projects/Ibadah/IbadahCXX/Dev/../../godot-cpp/include -I/home/B0LD/Projects/Ibadah/IbadahCXX/Dev/../../godot-cpp/gen/include -I/home/B0LD/Projects/Ibadah/IbadahCXX/Dev/../../godot-cpp/gdextension -std=gnu++23 -fPIC -o CMakeFiles/Ibadah.dir/GDExtension.cpp.o -c /home/B0LD/Projects/Ibadah/IbadahCXX/Dev/GDExtension.cpp",
+  "file": "/home/B0LD/Projects/Ibadah/IbadahCXX/Dev/GDExtension.cpp",
+  "output": "CMakeFiles/Ibadah.dir/GDExtension.cpp.o"
+},
+{
+  "directory": "/home/B0LD/Projects/Ibadah/IbadahCXX/Build",
+  "command": "/usr/bin/c++ -DIbadah_EXPORTS -I/home/B0LD/Projects/Ibadah/IbadahCXX/Dev/../../godot-cpp/include -I/home/B0LD/Projects/Ibadah/IbadahCXX/Dev/../../godot-cpp/gen/include -I/home/B0LD/Projects/Ibadah/IbadahCXX/Dev/../../godot-cpp/gdextension -std=gnu++23 -fPIC -o CMakeFiles/Ibadah.dir/Scenes/Main/Main.cpp.o -c /home/B0LD/Projects/Ibadah/IbadahCXX/Dev/Scenes/Main/Main.cpp",
+  "file": "/home/B0LD/Projects/Ibadah/IbadahCXX/Dev/Scenes/Main/Main.cpp",
+  "output": "CMakeFiles/Ibadah.dir/Scenes/Main/Main.cpp.o"
+},
+{
+  "directory": "/home/B0LD/Projects/Ibadah/IbadahCXX/Build",
+  "command": "/usr/bin/c++ -DIbadah_EXPORTS -I/home/B0LD/Projects/Ibadah/IbadahCXX/Dev/../../godot-cpp/include -I/home/B0LD/Projects/Ibadah/IbadahCXX/Dev/../../godot-cpp/gen/include -I/home/B0LD/Projects/Ibadah/IbadahCXX/Dev/../../godot-cpp/gdextension -std=gnu++23 -fPIC -o CMakeFiles/Ibadah.dir/Scenes/Main/MainSceneLoader/MainSceneLoader.cpp.o -c /home/B0LD/Projects/Ibadah/IbadahCXX/Dev/Scenes/Main/MainSceneLoader/MainSceneLoader.cpp",
+  "file": "/home/B0LD/Projects/Ibadah/IbadahCXX/Dev/Scenes/Main/MainSceneLoader/MainSceneLoader.cpp",
+  "output": "CMakeFiles/Ibadah.dir/Scenes/Main/MainSceneLoader/MainSceneLoader.cpp.o"
+}
+]

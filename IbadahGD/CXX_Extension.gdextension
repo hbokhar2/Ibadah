@@ -1,0 +1,8 @@
+[configuration]
+entry_symbol = "godot_gdextension_init"
+compatibility_minimum = "4.6"
+
+[libraries]
+linux.x86_64 = "res://Bin/libIbadah.so"
+windows.x86_64 = "res://Bin/libIbadah.dll"
+macos.universal = "res://Bin/libIbadah.dylib"

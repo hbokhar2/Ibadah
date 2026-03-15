@@ -1,0 +1,3 @@
+/home/B0LD/Projects/Ibadah/IbadahCXX/Build/CMakeFiles/Ibadah.dir
+/home/B0LD/Projects/Ibadah/IbadahCXX/Build/CMakeFiles/edit_cache.dir
+/home/B0LD/Projects/Ibadah/IbadahCXX/Build/CMakeFiles/rebuild_cache.dir
