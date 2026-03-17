@@ -58,7 +58,7 @@ def copySrcToGD(buildPath: Path, gdBinPath: Path) -> bool:
         libName = "libIbadah.so"
 
     try:
-        print(f"Copying {libname} to {gdBinPath}...")
+        print(f"Copying {libName} to {gdBinPath}...")
         shutil.copy((buildPath / libName), gdBinPath)
         return True
     except Exception as e:
