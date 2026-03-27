@@ -2,18 +2,17 @@
 
 #include <godot_cpp/classes/node.hpp>
 
-#include "MainSceneLoader/MainSceneLoader.h"
+#include "Player/Player.h"
 
 class Main : public godot::Node {
 	GDCLASS(Main, Node);
 
 	public:
-		void _init();
 		void _ready() override;
-		void _process(double delta) override;
+		void _physics_process(double delta) override;
 
 		static void _bind_methods();
 	
 	private:
-		MainSceneLoader m_mainSceneLoader;	
+		Player* local_player_;
 };

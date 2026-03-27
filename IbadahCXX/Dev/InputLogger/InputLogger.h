@@ -9,17 +9,17 @@
 #define INPUT_PUSHTOTALK (1u << 3)
 
 typedef struct{
-	uint8_t continuousInputs;
-	uint8_t interruptInputs;
-}InputLogs;
+	uint8_t continuous_inputs;
+	uint8_t interrupt_inputs;
+}InputLog;
 
 
 class InputLogger{
 	public:
-		void readContinuousInputs(void);
-		void readInterruptInputs(void);
-		void zeroOutInputLog(void);
-		InputLogs getInputLogs() const;
+		void read_cont_inputs(void);
+		void read_interupt_inputs(void);
+		void zero_input_log(void);
+		const InputLog& get_input_log() const;
 	private:
-		InputLogs m_inputLogs;
+		InputLog input_logs_;
 };

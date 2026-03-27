@@ -24,5 +24,10 @@ endif()
 
 add_library(${PROJECT_NAME} SHARED ${SOURCES})
 
-target_include_directories(${PROJECT_NAME} PRIVATE ${GODOT_INCLUDE})
+target_include_directories(${PROJECT_NAME} PRIVATE 
+	${GODOT_INCLUDE}
+	"${CMAKE_SOURCE_DIR}"
+)
+
 target_link_libraries(${PROJECT_NAME} PRIVATE ${GODOT_LIB})
+

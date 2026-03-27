@@ -5,14 +5,15 @@
 [sub_resource type="SphereShape3D" id="SphereShape3D_6pcn6"]
 radius = 0.29674304
 
-[node name="Character1" type="CharacterBody3D" unique_id=116025913]
+[node name="Character1" type="Node3D" unique_id=234774429]
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=561602690]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9228845, -0.17361611)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.17525715, 1.9078858, 0)
+current = true
 fov = 103.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=779011339]
-transform = Transform3D(-0.99070513, 0, 0.13602683, 0, 1, 0, -0.13602683, 0, -0.99070513, 0, 1.436243, 0)
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0, 1.436243, 0)
 mesh = ExtResource("1_1r1fb")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1598073972]
