@@ -9,8 +9,6 @@ class Main : public godot::Node {
 
 	public:
 		void _ready() override;
-		void _physics_process(double delta) override;
-
 		static void _bind_methods();
 	
 	private:

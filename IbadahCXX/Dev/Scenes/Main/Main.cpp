@@ -1,16 +1,18 @@
 #include "Main.h"
 
-void Main::_ready(){
+#include <godot_cpp/variant/utility_functions.hpp>
+#include <godot_cpp/classes/resource_loader.hpp>
+#include <godot_cpp/classes/packed_scene.hpp>
 
-	local_player_ = memnew(Player);
-	add_child(local_player_);
-	local_player_ -> instantiate_player("res://Scenes/Characters/Duck.tscn");
+void Main::_ready() {
 
-}
+	godot::Ref<godot::PackedScene> character_scene = godot::ResourceLoader::get_singleton() -> load("res://Scenes/Characters/Duck.tscn");
+	if(character_scene.is_null()) godot::UtilityFunctions::print("Incorrect scene path.");
 
-void Main::_physics_process(double delta){
+	godot::Node* character_instance = character_scene -> instantiate();
 
-	local_player_ -> exec_player_inputs();
+	if(!character_instance) godot::UtilityFunctions::print("Could not instantiate character.");
+	add_child(character_instance);
 
 }
 

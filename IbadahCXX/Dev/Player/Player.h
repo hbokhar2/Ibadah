@@ -4,7 +4,7 @@
 #include <godot_cpp/classes/character_body3d.hpp>
 #include <godot_cpp/variant/vector3.hpp>
 
-#include "InputLogger/InputLogger.h"
+#include "InputHandler/InputHandler.h"
 
 enum class player_state{
 	Dead,
@@ -18,6 +18,7 @@ class Player : public godot::CharacterBody3D{
 		Player();
 
 		void _ready() override;
+		void _physics_process(double delta) override;
 		static void _bind_methods();
 
 		bool instantiate_player(const godot::String resource_path);
@@ -32,5 +33,5 @@ class Player : public godot::CharacterBody3D{
 		float walk_speed_;
 		float run_speed_;
 
-		InputLogger* input_logger_;
+		InputHandler* input_handler_;
 };
