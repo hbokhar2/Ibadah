@@ -11,23 +11,19 @@ set(GODOT_INCLUDE
 	"${CMAKE_SOURCE_DIR}/../../godot-cpp/gdextension"
 )
 
-file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS
-	"${CMAKE_SOURCE_DIR}/*.cpp"
-	"${CMAKE_SOURCE_DIR}/*.c"
-)
-
 if(WIN32)
 	set(GODOT_LIB "${CMAKE_SOURCE_DIR}/../../godot-cpp/bin/libgodot-cpp.windows.template_debug.x86_64.lib")
 elseif(UNIX)
 	set(GODOT_LIB "${CMAKE_SOURCE_DIR}/../../godot-cpp/bin/libgodot-cpp.linux.template_debug.x86_64.a")
 endif()
 
-add_library(${PROJECT_NAME} SHARED ${SOURCES})
+add_library(${PROJECT_NAME} SHARED 
+	${SOURCES}
+)
 
 target_include_directories(${PROJECT_NAME} PRIVATE 
 	${GODOT_INCLUDE}
 	"${CMAKE_SOURCE_DIR}"
 )
 
-target_link_libraries(${PROJECT_NAME} PRIVATE ${GODOT_LIB})
 

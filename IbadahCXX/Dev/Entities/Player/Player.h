@@ -6,7 +6,7 @@
 
 #include "InputHandler/InputHandler.h"
 
-enum class player_state{
+enum class player_state_t{
 	Dead,
 	Alive,
 	Downed
@@ -24,6 +24,8 @@ class Player : public godot::CharacterBody3D{
 		bool instantiate_player(const godot::String resource_path);
 		void exec_player_inputs(void);
 
+		player_state_t get_player_state(void);
+
 	private:
 		godot::Node* character_instance_;
 
@@ -34,4 +36,6 @@ class Player : public godot::CharacterBody3D{
 		float run_speed_;
 
 		InputHandler* input_handler_;
+		
+		player_state_t player_state_;
 };

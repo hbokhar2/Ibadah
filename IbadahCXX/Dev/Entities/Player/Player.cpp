@@ -15,6 +15,16 @@ Player::Player()
 {
 }
 
+void Player::_ready(){
+	input_handler_ = memnew(InputHandler);
+}
+
+void Player::_physics_process(double delta){
+	this -> exec_player_inputs();
+}
+
+void Player::_bind_methods(){}
+
 void Player::exec_player_inputs(){
 
 	direction_ = godot::Vector3(0, 0, 0);
@@ -37,15 +47,8 @@ void Player::exec_player_inputs(){
 
 	set_velocity(velocity_);
 	move_and_slide();
-
 }
 
-void Player::_ready(){
-	input_handler_ = memnew(InputHandler);
+player_state_t Player::get_player_state(void){
+	return player_state_;
 }
-
-void Player::_physics_process(double delta){
-	this -> exec_player_inputs();
-}
-
-void Player::_bind_methods(){}
