@@ -1,0 +1,16 @@
+/home/B0LD/projects/ibadah/build/CMakeFiles/Ibadah.dir
+/home/B0LD/projects/ibadah/build/CMakeFiles/edit_cache.dir
+/home/B0LD/projects/ibadah/build/CMakeFiles/rebuild_cache.dir
+/home/B0LD/projects/ibadah/build/godot-cpp/CMakeFiles/generate_bindings.dir
+/home/B0LD/projects/ibadah/build/godot-cpp/CMakeFiles/godot-cpp.dir
+/home/B0LD/projects/ibadah/build/godot-cpp/CMakeFiles/edit_cache.dir
+/home/B0LD/projects/ibadah/build/godot-cpp/CMakeFiles/rebuild_cache.dir
+/home/B0LD/projects/ibadah/build/entities/CMakeFiles/Entities.dir
+/home/B0LD/projects/ibadah/build/entities/CMakeFiles/edit_cache.dir
+/home/B0LD/projects/ibadah/build/entities/CMakeFiles/rebuild_cache.dir
+/home/B0LD/projects/ibadah/build/scenes/CMakeFiles/Scenes.dir
+/home/B0LD/projects/ibadah/build/scenes/CMakeFiles/edit_cache.dir
+/home/B0LD/projects/ibadah/build/scenes/CMakeFiles/rebuild_cache.dir
+/home/B0LD/projects/ibadah/build/systems/CMakeFiles/Systems.dir
+/home/B0LD/projects/ibadah/build/systems/CMakeFiles/edit_cache.dir
+/home/B0LD/projects/ibadah/build/systems/CMakeFiles/rebuild_cache.dir

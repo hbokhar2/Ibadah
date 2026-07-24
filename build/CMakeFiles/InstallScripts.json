@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/B0LD/projects/ibadah/build/cmake_install.cmake",
+		"/home/B0LD/projects/ibadah/build/godot-cpp/cmake_install.cmake",
+		"/home/B0LD/projects/ibadah/build/entities/cmake_install.cmake",
+		"/home/B0LD/projects/ibadah/build/scenes/cmake_install.cmake",
+		"/home/B0LD/projects/ibadah/build/systems/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,2 @@
+/run/current-system/sw/bin/ar qc libscenes.a CMakeFiles/scenes.dir/main/Main.cpp.o
+/run/current-system/sw/bin/ranlib libscenes.a
