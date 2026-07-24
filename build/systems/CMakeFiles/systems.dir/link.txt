@@ -1,2 +1,0 @@
-/run/current-system/sw/bin/ar qc libsystems.a CMakeFiles/systems.dir/input/InputHandler.cpp.o
-/run/current-system/sw/bin/ranlib libsystems.a

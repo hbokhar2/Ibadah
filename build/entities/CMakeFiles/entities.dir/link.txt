@@ -1,2 +1,0 @@
-/run/current-system/sw/bin/ar qc libentities.a CMakeFiles/entities.dir/player/Player.cpp.o
-/run/current-system/sw/bin/ranlib libentities.a

@@ -1,2 +1,0 @@
-/run/current-system/sw/bin/ar qc libEntities.a CMakeFiles/Entities.dir/player/Player.cpp.o
-/run/current-system/sw/bin/ranlib libEntities.a

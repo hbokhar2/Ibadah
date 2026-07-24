@@ -1,2 +1,0 @@
-/run/current-system/sw/bin/ar qc libibadah.a CMakeFiles/ibadah.dir/GDExtension.cpp.o
-/run/current-system/sw/bin/ranlib libibadah.a
