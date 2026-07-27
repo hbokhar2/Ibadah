@@ -1,2 +1,0 @@
-/nix/store/fmysfy9gl5d59yir4fksi29wz10maljg-clang-wrapper-19.1.7/bin/ar qc libEntities.a CMakeFiles/Entities.dir/Player/Player.cpp.o
-/nix/store/fmysfy9gl5d59yir4fksi29wz10maljg-clang-wrapper-19.1.7/bin/ranlib libEntities.a

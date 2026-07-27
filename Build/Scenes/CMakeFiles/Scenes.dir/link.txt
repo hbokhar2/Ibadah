@@ -1,2 +1,0 @@
-/nix/store/fmysfy9gl5d59yir4fksi29wz10maljg-clang-wrapper-19.1.7/bin/ar qc libScenes.a CMakeFiles/Scenes.dir/Main/Main.cpp.o
-/nix/store/fmysfy9gl5d59yir4fksi29wz10maljg-clang-wrapper-19.1.7/bin/ranlib libScenes.a
