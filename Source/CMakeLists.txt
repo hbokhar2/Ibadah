@@ -23,6 +23,14 @@ add_library(${TARGET_NAME} SHARED
 	${SOURCES}
 )
 
+if(WIN32) 
+	target_link_options(${TARGET_NAME} PRIVATE
+		-static
+		-static-libgcc
+		-static-libstdc++
+	)
+endif()
+
 target_link_libraries(${TARGET_NAME} 
 PRIVATE
 	Systems
