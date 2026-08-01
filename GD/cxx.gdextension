@@ -4,4 +4,4 @@ compatibility_minimum = "4.4"
 
 [libraries]
 linux.debug.x86_64 = "res://Bin/libIbadah.so"
-
+windows.debug.x86_64 = "res://Bin/libIbadah.dll"
