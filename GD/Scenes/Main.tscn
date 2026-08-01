@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://be3acnwiqptbs"]
+
+[ext_resource type="PackedScene" uid="uid://c0mhgsb8jw515" path="res://Scenes/MapObjects/ModularStreet/ModularStreet.tscn" id="1_r150o"]
+
+[node name="Main" type="Main"]
+
+[node name="ModularStreet" parent="." instance=ExtResource("1_r150o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.461924, 0, 0)
+
+[node name="MeshInstance3D" parent="ModularStreet" index="0"]
+transform = Transform3D(1, 0, 0, 0, 2.22045e-16, 1, 0, -1, 2.22045e-16, 0.0176986, 0, -0.050422)
+
+[editable path="ModularStreet"]
