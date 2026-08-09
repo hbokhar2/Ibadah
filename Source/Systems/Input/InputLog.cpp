@@ -1,39 +1,52 @@
 #include "InputLog.h"
 
-#include <godot_cpp/classes/input.hpp>
-#include <godot_cpp/classes/input_map.hpp>
-#include <godot_cpp/variant/utility_functions.hpp>
+#include <godot_cpp/classes/input_event_mouse_motion.hpp>
 
 InputLog::InputLog()
 {
+	mouse_delta_ = godot::Vector2();
+
+	input_frame_.buttons = 0x00;
+	input_frame_.camera_delta = godot::Vector2();
+
+	producer_index_ = 0;
+	consumer_index_ = 0;
 }
 
-void InputLog::update_input_hashmap()
+void InputLog::process_input_poll()
 {
-	input_map_ = godot::InputMap::get_singleton() -> get_actions();
+	godot::Input* input_event = godot::Input::get_singleton();
+
+	if(input_event -> is_action_pressed("move_forward")) input_frame_.buttons |= INPUT_FORWARD;
+	if(input_event -> is_action_pressed("move_backward")) input_frame_.buttons|= INPUT_BACKWARD;
+	if(input_event -> is_action_pressed("move_right")) input_frame_.buttons |= INPUT_RIGHT;
+	if(input_event -> is_action_pressed("move_left")) input_frame_.buttons |= INPUT_LEFT;
+	if(input_event -> is_action_pressed("jump")) input_frame_.buttons |= INPUT_JUMP;
 }
 
-void InputLog::record_input(godot::Ref<godot::InputEvent>& p_event)
+void InputLog::process_input_event(const godot::Ref<godot::InputEvent>& p_event)
 {
-	if(p_event -> is_class("InputEventKey"))
-	{
-		godot::Ref<godot::InputEventKey> key_event = p_event;
+	godot::Ref<godot::InputEventMouseMotion> motion = p_event;
 
-	}
-
-	/*Map input to in game action, and log it here.*/
-
-	if(input_log_.size() == 32)
-	{
-		input_log_.pop_back();
-	}
+	if(motion.is_valid())
+		input_frame_.camera_delta += motion -> get_relative();
 }
 
-void InputLog::clear_input_log()
+void InputLog::commit_input_frame()
 {
-	input_log_.clear();
+	input_log_[producer_index_] = input_frame_;
+	producer_index_ = (producer_index_ + 1) % input_log_.size();
+
+	input_frame_.buttons = 0x0000; 
+	input_frame_.camera_delta = godot::Vector2();
 }
 
-const Log& InputLog::get_input_log() const{
-	return input_log_;
+//This relies on commit_input_frame() being executed before this function.
+//Ideally commit_input_frame() and get_unprocessed_frame() should be ran in
+//any order.
+InputFrame& InputLog::get_unprocessed_frame()
+{
+	InputFrame& input_frame = input_log_[consumer_index_];
+	consumer_index_ = (consumer_index_ + 1) % input_log_.size();
+	return input_frame;
 }

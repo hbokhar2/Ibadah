@@ -1,10 +1,15 @@
 #include "Player.h"
 
+#include <algorithm>
+
 #include <godot_cpp/variant/vector3.hpp>
 #include <godot_cpp/classes/resource_loader.hpp>
 #include <godot_cpp/classes/packed_scene.hpp>
 
-#include "Input/InputHandler.h"
+//This is just a temporary way to quickly set my mouse sensitivity.
+//This value should not be defined here. In the future it should of course
+//be modified in a settings menu.
+#define MOUSE_SENS 0.005
 
 Player::Player()
 	:
@@ -14,13 +19,16 @@ Player::Player()
 		run_speed_(1.15),
 		jump_speed_(1.75),
 		character_instance_(nullptr),
-		input_handler_(nullptr),
-		gravity_(7)
+		input_log_(nullptr),
+		gravity_(7),
+		yaw_(0),
+		pitch_(0)
 {
 }
 
 void Player::_input(const godot::Ref<godot::InputEvent>& event)
 {
+	input_log_ -> process_input_event(event);
 }
 
 void Player::_ready()
@@ -28,37 +36,37 @@ void Player::_ready()
 	set_velocity(godot::Vector3(0, 0, 0));
 	set_position(godot::Vector3(0, 1, 0));
 
-	//This works for now but InputHandler should be a singleton when co-op capabilities are being added.
-	input_handler_ = memnew(InputHandler);
+	//This works for now but InputLog should be a singleton when co-op capabilities are being added.
+	input_log_ = memnew(InputLog);
+	camera_ = get_node<godot::Camera3D>("Camera3D");
 }
 
 void Player::_physics_process(double delta)
 {
-	this -> exec_player_inputs(delta);
+	input_log_ -> process_input_poll();
+	input_log_ -> commit_input_frame();
+	this -> exec_player_inputs(input_log_-> get_unprocessed_frame() ,delta);
 }
 
 void Player::_bind_methods(){}
 
-void Player::exec_player_inputs(double delta)
+void Player::exec_player_inputs(const InputFrame& input_frame, double delta)
 {
 	godot::Vector3 velocity = get_velocity();
 
 	direction_ = godot::Vector3();
 
-	input_handler_ -> clear_input_log();
-	input_handler_ -> log_inputs();
-
 	//WASD Movements
-	if(input_handler_ -> get_input_log() & INPUT_FORWARD)
+	if(input_frame.buttons & INPUT_FORWARD)
 		direction_.x = 1;
 
-	if(input_handler_ -> get_input_log() & INPUT_BACKWARD)
+	if(input_frame.buttons & INPUT_BACKWARD)
 		direction_.x = -1;
 
-	if(input_handler_ -> get_input_log() & INPUT_RIGHT)
+	if(input_frame.buttons & INPUT_RIGHT)
 		direction_.z = 1;
 
-	if(input_handler_ -> get_input_log() & INPUT_LEFT)
+	if(input_frame.buttons & INPUT_LEFT)
 		direction_.z = -1;
 
 	if(direction_.length() > 0 && is_on_floor())
@@ -74,7 +82,7 @@ void Player::exec_player_inputs(double delta)
 	}
 
 	//Jumping
-	if((input_handler_ -> get_input_log() & INPUT_JUMP) && is_on_floor())
+	if((input_frame.buttons & INPUT_JUMP) && is_on_floor())
 	{
 		velocity.y = jump_speed_;
 	}
@@ -84,6 +92,17 @@ void Player::exec_player_inputs(double delta)
 		velocity.y -= gravity_ * delta;
 	}
 
+	yaw_ -= input_frame.camera_delta.x * MOUSE_SENS;
+	pitch_ -= input_frame.camera_delta.y * MOUSE_SENS;
+
+	pitch_ = std::clamp(
+			pitch_,
+			-1.55334f,
+			1.55334f
+	);
+
+	set_rotation(godot::Vector3(0, yaw_, 0));
+	camera_ -> set_rotation(godot::Vector3(pitch_, 0, 0));
 	set_velocity(velocity);
 	move_and_slide();
 }
