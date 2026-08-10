@@ -9,8 +9,8 @@
 void initialize_module(godot::ModuleInitializationLevel p_level){
 	if(p_level != godot::MODULE_INITIALIZATION_LEVEL_SCENE) return;
 
-	godot::ClassDB::register_class<Main>();
-	godot::ClassDB::register_class<Player>();
+	godot::ClassDB::register_runtime_class<Main>();
+	godot::ClassDB::register_runtime_class<Player>();
 }
 
 void uninitialize_module(godot::ModuleInitializationLevel p_level){

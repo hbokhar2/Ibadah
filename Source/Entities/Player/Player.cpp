@@ -1,6 +1,7 @@
 #include "Player.h"
 
 #include <algorithm>
+#include <cmath>
 
 #include <godot_cpp/variant/vector3.hpp>
 #include <godot_cpp/classes/resource_loader.hpp>
@@ -52,22 +53,35 @@ void Player::_bind_methods(){}
 
 void Player::exec_player_inputs(const InputFrame& input_frame, double delta)
 {
-	godot::Vector3 velocity = get_velocity();
+	yaw_ -= input_frame.camera_delta.x * MOUSE_SENS;
+	pitch_ -= input_frame.camera_delta.y * MOUSE_SENS;
+	pitch_ = std::clamp(pitch_, -1.55334f, 1.55334f);
 
+	set_rotation(godot::Vector3(0, yaw_, 0));
+	camera_->set_rotation(godot::Vector3(pitch_, 0, 0));
+
+	godot::Vector3 velocity = get_velocity();
 	direction_ = godot::Vector3();
 
-	//WASD Movements
-	if(input_frame.buttons & INPUT_FORWARD)
-		direction_.x = 1;
+	godot::Vector3 forward = -get_global_transform().basis.get_column(2);
+	godot::Vector3 right = get_global_transform().basis.get_column(0);
 
-	if(input_frame.buttons & INPUT_BACKWARD)
-		direction_.x = -1;
+	forward.y = 0;
+	right.y = 0;
+	forward.normalize();
+	right.normalize();
 
-	if(input_frame.buttons & INPUT_RIGHT)
-		direction_.z = 1;
+	if (input_frame.buttons & INPUT_FORWARD)
+		direction_ += forward; 
 
-	if(input_frame.buttons & INPUT_LEFT)
-		direction_.z = -1;
+	if (input_frame.buttons & INPUT_BACKWARD)
+		direction_ -= forward;
+
+	if (input_frame.buttons & INPUT_RIGHT)
+		direction_ += right;
+
+	if (input_frame.buttons & INPUT_LEFT)
+		direction_ -= right;
 
 	if(direction_.length() > 0 && is_on_floor())
 	{
@@ -91,15 +105,6 @@ void Player::exec_player_inputs(const InputFrame& input_frame, double delta)
 	{
 		velocity.y -= gravity_ * delta;
 	}
-
-	yaw_ -= input_frame.camera_delta.x * MOUSE_SENS;
-	pitch_ -= input_frame.camera_delta.y * MOUSE_SENS;
-
-	pitch_ = std::clamp(
-			pitch_,
-			-1.55334f,
-			1.55334f
-	);
 
 	set_rotation(godot::Vector3(0, yaw_, 0));
 	camera_ -> set_rotation(godot::Vector3(pitch_, 0, 0));
