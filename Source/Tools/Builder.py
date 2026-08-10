@@ -36,7 +36,7 @@ def cmake_generate_build_system(ibadah_cxx_path: Path, ibadah_build_path: Path) 
 def cmake_build(ibadah_build_path: Path) -> bool:
     try:
         result = subprocess.run(
-            ["cmake", "--build", str(ibadah_build_path), "--parallel", "40"],
+            ["cmake", "--build", str(ibadah_build_path), "--parallel", "50"],
             check = True
         )
 

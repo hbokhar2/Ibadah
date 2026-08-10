@@ -1,12 +1,12 @@
 #pragma once
 
 #include <cstdint>
-#include <vector>
+#include <array>
 
-#include <godot_cpp/classes/input_map.hpp>
-#include <godot_cpp/variant/typed_array.hpp>
+#include <godot_cpp/variant/vector2.hpp>
 #include <godot_cpp/classes/input.hpp>
-#include <godot_cpp/classes/input_event_key.hpp>
+
+#define MAX_LOG_SIZE 32
 
 #define INPUT_FORWARD (1u)
 #define INPUT_BACKWARD (1u << 1)
@@ -18,20 +18,28 @@
 #define INPUT_PLACE (1u << 7)
 #define INPUT_RECORD_MIC (1u << 8)
 
-using Log = std::vector<uint16_t>;
+typedef struct 
+{
+	uint16_t buttons;
+	godot::Vector2 camera_delta;
+}
+InputFrame;
 
 class InputLog
 {
 	public:
 		InputLog();
 
-		void update_input_hashmap();
-
-		void record_input(godot::Ref<godot::InputEvent>& p_event);
-		void clear_input_log();
-		const Log& get_input_log() const;
+		void process_input_poll();
+		void process_input_event(const godot::Ref<godot::InputEvent>& p_event);
+		void commit_input_frame();
+		InputFrame& get_unprocessed_frame();
 	
 	private:
-		Log input_log_;
-		godot::TypedArray<godot::StringName> input_map_;
+		godot::Vector2 mouse_delta_;
+
+		InputFrame input_frame_;
+		std::array<InputFrame, MAX_LOG_SIZE> input_log_;
+		uint8_t producer_index_;
+		uint8_t consumer_index_;
 };
