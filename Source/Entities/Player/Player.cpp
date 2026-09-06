@@ -10,26 +10,31 @@
 //This is just a temporary way to quickly set my mouse sensitivity.
 //This value should not be defined here. In the future it should of course
 //be modified in a settings menu.
-#define MOUSE_SENS 0.005
+#define MOUSE_SENS 0.0025
+
+#define GRAVITY 7
+#define WALK_SPEED 0.75
+#define RUN_SPEED 1.15
+#define JUMP_SPEED 1.75
 
 Player::Player()
 	:
-		direction_(godot::Vector3(0, 0, 0)),
-		velocity_(0, 0, 0),
-		walk_speed_(0.75),
-		run_speed_(1.15),
-		jump_speed_(1.75),
-		character_instance_(nullptr),
-		input_log_(nullptr),
-		gravity_(7),
-		yaw_(0),
-		pitch_(0)
+		m_direction(godot::Vector3(0, 0, 0)),
+		m_velocity(0, 0, 0),
+		m_characterInstance(nullptr),
+		m_inputProcessor(nullptr),
+		m_yaw(0),
+		m_pitch(0),
+		m_isHost(false),
+		m_playerId(0)
 {
+	m_playerInstance++;
+	m_playerId = m_playerInstance;
 }
 
 void Player::_input(const godot::Ref<godot::InputEvent>& event)
 {
-	input_log_ -> process_input_event(event);
+	m_inputProcessor -> processInputEvent(event);
 }
 
 void Player::_ready()
@@ -38,30 +43,30 @@ void Player::_ready()
 	set_position(godot::Vector3(0, 1, 0));
 
 	//This works for now but InputLog should be a singleton when co-op capabilities are being added.
-	input_log_ = memnew(InputLog);
-	camera_ = get_node<godot::Camera3D>("Camera3D");
+	m_inputProcessor = memnew(Input::InputProcessor(m_playerId));
+	m_camera = get_node<godot::Camera3D>("Camera3D");
 }
 
 void Player::_physics_process(double delta)
 {
-	input_log_ -> process_input_poll();
-	input_log_ -> commit_input_frame();
-	this -> exec_player_inputs(input_log_-> get_unprocessed_frame() ,delta);
+	m_inputProcessor -> processInputPoll();
+	m_inputProcessor -> commitInputFrame();
+	this -> execPlayerInputs(m_inputProcessor -> getUnprocessedFrame() ,delta);
 }
 
 void Player::_bind_methods(){}
 
-void Player::exec_player_inputs(const InputFrame& input_frame, double delta)
+void Player::execPlayerInputs(const Input::InputFrame& inputFrame, double delta)
 {
-	yaw_ -= input_frame.camera_delta.x * MOUSE_SENS;
-	pitch_ -= input_frame.camera_delta.y * MOUSE_SENS;
-	pitch_ = std::clamp(pitch_, -1.55334f, 1.55334f);
+	m_yaw -= inputFrame.cameraDelta.x * MOUSE_SENS;
+	m_pitch -= inputFrame.cameraDelta.y * MOUSE_SENS;
+	m_pitch = std::clamp(m_pitch, -1.55334f, 1.55334f);
 
-	set_rotation(godot::Vector3(0, yaw_, 0));
-	camera_->set_rotation(godot::Vector3(pitch_, 0, 0));
+	set_rotation(godot::Vector3(0, m_yaw, 0));
+	m_camera ->set_rotation(godot::Vector3(m_pitch, 0, 0));
 
 	godot::Vector3 velocity = get_velocity();
-	direction_ = godot::Vector3();
+	m_direction = godot::Vector3();
 
 	godot::Vector3 forward = -get_global_transform().basis.get_column(2);
 	godot::Vector3 right = get_global_transform().basis.get_column(0);
@@ -71,23 +76,23 @@ void Player::exec_player_inputs(const InputFrame& input_frame, double delta)
 	forward.normalize();
 	right.normalize();
 
-	if (input_frame.buttons & INPUT_FORWARD)
-		direction_ += forward; 
+	if (inputFrame.buttons & INPUT_FORWARD)
+		m_direction += forward; 
 
-	if (input_frame.buttons & INPUT_BACKWARD)
-		direction_ -= forward;
+	if (inputFrame.buttons & INPUT_BACKWARD)
+		m_direction -= forward;
 
-	if (input_frame.buttons & INPUT_RIGHT)
-		direction_ += right;
+	if (inputFrame.buttons & INPUT_RIGHT)
+		m_direction += right;
 
-	if (input_frame.buttons & INPUT_LEFT)
-		direction_ -= right;
+	if (inputFrame.buttons & INPUT_LEFT)
+		m_direction -= right;
 
-	if(direction_.length() > 0 && is_on_floor())
+	if(m_direction.length() > 0 && is_on_floor())
 	{
-		direction_.normalize();
-		velocity.x = direction_.x * walk_speed_;
-		velocity.z = direction_.z * walk_speed_;
+		m_direction.normalize();
+		velocity.x = m_direction.x * WALK_SPEED;
+		velocity.z = m_direction.z * WALK_SPEED;
 	}
 	else if(is_on_floor())
 	{
@@ -96,23 +101,23 @@ void Player::exec_player_inputs(const InputFrame& input_frame, double delta)
 	}
 
 	//Jumping
-	if((input_frame.buttons & INPUT_JUMP) && is_on_floor())
+	if((inputFrame.buttons & INPUT_JUMP) && is_on_floor())
 	{
-		velocity.y = jump_speed_;
+		velocity.y = JUMP_SPEED;
 	}
 
 	if(!is_on_floor())
 	{
-		velocity.y -= gravity_ * delta;
+		velocity.y -= GRAVITY * delta;
 	}
 
-	set_rotation(godot::Vector3(0, yaw_, 0));
-	camera_ -> set_rotation(godot::Vector3(pitch_, 0, 0));
+	set_rotation(godot::Vector3(0, m_yaw, 0));
+	m_camera -> set_rotation(godot::Vector3(m_pitch, 0, 0));
 	set_velocity(velocity);
 	move_and_slide();
 }
 
-player_state_t Player::get_player_state(void)
+uint8_t Player::getPlayerId()
 {
-	return player_state_;
+	return m_playerId;
 }

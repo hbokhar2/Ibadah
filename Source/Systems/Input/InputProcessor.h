@@ -6,6 +6,8 @@
 #include <godot_cpp/variant/vector2.hpp>
 #include <godot_cpp/classes/input.hpp>
 
+namespace Input {
+
 #define MAX_LOG_SIZE 32
 
 #define INPUT_FORWARD (1u)
@@ -21,25 +23,32 @@
 typedef struct 
 {
 	uint16_t buttons;
-	godot::Vector2 camera_delta;
+	godot::Vector2 cameraDelta;
 }
 InputFrame;
 
-class InputLog
+using InputLog = std::array<InputFrame, MAX_LOG_SIZE>;
+
+class InputProcessor
 {
 	public:
-		InputLog();
+		InputProcessor(uint8_t playerId);
 
-		void process_input_poll();
-		void process_input_event(const godot::Ref<godot::InputEvent>& p_event);
-		void commit_input_frame();
-		InputFrame& get_unprocessed_frame();
-	
+		void processInputPoll();
+		void processInputEvent(const godot::Ref<godot::InputEvent>& p_event);
+
+		void commitInputFrame();
+		InputFrame& getUnprocessedFrame();
+
 	private:
-		godot::Vector2 mouse_delta_;
+		uint8_t m_playerId;
 
-		InputFrame input_frame_;
-		std::array<InputFrame, MAX_LOG_SIZE> input_log_;
-		uint8_t producer_index_;
-		uint8_t consumer_index_;
+		godot::Vector2 m_mouseDelta;
+		InputFrame m_inputFrame;
+		InputLog m_inputLog;
+
+		uint8_t m_producerIndex;
+		uint8_t m_consumerIndex;
 };
+
+}

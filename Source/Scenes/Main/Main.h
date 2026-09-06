@@ -2,7 +2,7 @@
 
 #include <godot_cpp/classes/node.hpp>
 
-#include "Player/Player.h"
+#include "Player.h"
 
 class Main : public godot::Node {
 	GDCLASS(Main, Node);

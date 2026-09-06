@@ -1,19 +1,11 @@
 set(TARGET_NAME Entities)
 
-file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS
-	"*.cpp"
-	"*.c"
-)
+add_subdirectory(Player)
 
 add_library(${TARGET_NAME} STATIC 
-	${SOURCES}
-)
-
-target_include_directories(${TARGET_NAME} PUBLIC 
-	${CMAKE_CURRENT_SOURCE_DIR}
+	$<TARGET_OBJECTS:Player>
 )
 
 target_link_libraries(${TARGET_NAME} PUBLIC
-	godot-cpp
-	Systems
+	Player
 )
