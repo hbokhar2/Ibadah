@@ -1,0 +1,18 @@
+Player
+ - Relatable
+ - Has a internal struggle that is common to the goyim. The internal struggle slowly drives this character insane
+   due to an ai-like entity/eight ball that misguides the character.
+   * Has a blue collar job
+   * Slave wagie
+   * Gooner
+ - Is offered a way out through the entity but this way out has a cost (How?).
+
+Entity
+ - The more you use this entity, the more cynical the game gets due to your indulgence into whatever this thing is.
+ - The nature of this entity is mostly mysterious but its "positive effects" are known. You will learn more of this entity as the story goes
+
+How the Entity and Player meet?
+ - The player meets the entity through some cult or something offering an alternative to their life.
+
+Game
+ - Mind Fuck
