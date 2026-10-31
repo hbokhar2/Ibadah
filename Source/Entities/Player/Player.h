@@ -6,37 +6,52 @@
 #include <godot_cpp/classes/input_event.hpp>
 #include <godot_cpp/classes/camera3d.hpp>
 
-#include "Input/InputLog.h"
+#include "Systems.h"
 
-enum class player_state_t{
-	Dead,
+typedef struct {
+	float yaw;
+	float pitch;
+}MousePosition;
+
+typedef struct {
+	godot::Vector3 direction;
+	godot::Vector3 velocity;
+}PlayerMotion;
+
+enum PlayerState {
 	Alive,
-	Downed
+	Dead
 };
 
 class Player : public godot::CharacterBody3D{
 	GDCLASS(Player, CharacterBody3D)
-	public:
-		Player();
 
-		void _ready() override;
-		void _physics_process(double delta) override;
-		void _input(const godot::Ref<godot::InputEvent>& event) override;
-		static void _bind_methods();
+public:
+	Player();
 
-		bool instantiate_player(const godot::String resource_path);
-		void exec_player_inputs(const InputFrame& input_frame, double delta);
+	void _ready() override;
+	void _physics_process(double delta) override;
+	void _input(const godot::Ref<godot::InputEvent>& event) override;
+	static void _bind_methods();
 
-		player_state_t get_player_state(void);
+	bool instantiatePlayer(const godot::String resourcePath);
+	void runPlayerInputs(const InputFrame& inputFrame, double delta);
 
-	private:
-		godot::Node* character_instance_;
+	PlayerState getPlayerState(void);
 
-		godot::Camera3D* camera_;
-		InputLog* input_log_;
-		godot::Vector3 direction_, velocity_;
-		float walk_speed_, run_speed_, jump_speed_, gravity_;
-		float yaw_, pitch_;
-		
-		player_state_t player_state_;
+private:
+	static constexpr float kWalkSpeed = 0.5f;
+	static constexpr float kRunSpeed = 0.8f;
+	static constexpr float kJumpSpeed = 1.75f;
+	static constexpr float kGravity = 7.0f;
+
+	godot::Node* characterInstance_;
+
+	PlayerState playerState_;
+
+	godot::Camera3D *pCamera_;
+	Systems *pSystems_;
+
+	PlayerMotion playerMotion_;
+	MousePosition mousePos_;
 };

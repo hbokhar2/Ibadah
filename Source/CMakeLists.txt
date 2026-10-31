@@ -16,8 +16,8 @@ file(GLOB SOURCES CONFIGURE_DEPENDS
 
 add_subdirectory(godot-cpp godot-cpp)
 add_subdirectory(Entities)
-add_subdirectory(Scenes)
 add_subdirectory(Systems)
+add_subdirectory(Scenes)
 
 add_library(${TARGET_NAME} SHARED 
 	${SOURCES}

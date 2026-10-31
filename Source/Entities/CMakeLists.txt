@@ -10,10 +10,10 @@ add_library(${TARGET_NAME} STATIC
 )
 
 target_include_directories(${TARGET_NAME} PUBLIC 
-	${CMAKE_CURRENT_SOURCE_DIR}
+	${CMAKE_CURRENT_SOURCE_DIR}/Player
 )
 
-target_link_libraries(${TARGET_NAME} PUBLIC
+target_link_libraries(${TARGET_NAME} PRIVATE
 	godot-cpp
 	Systems
 )

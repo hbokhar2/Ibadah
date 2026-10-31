@@ -2,7 +2,8 @@
 
 #include <godot_cpp/classes/node.hpp>
 
-#include "Player/Player.h"
+#include "Player.h"
+#include "Systems.h"
 
 class Main : public godot::Node {
 	GDCLASS(Main, Node);
@@ -12,5 +13,5 @@ class Main : public godot::Node {
 		static void _bind_methods();
 	
 	private:
-		Player* local_player_;
+		Player *localPlayer_;
 };
