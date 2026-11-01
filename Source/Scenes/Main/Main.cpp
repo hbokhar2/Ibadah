@@ -6,19 +6,28 @@
 
 #include "Systems.h"
 
+Main::Main()
+	:
+		characterInstance_(nullptr)
+{
+}
+
 void Main::_ready() {
+	Systems::getInstance(); //Runs "Systems" constructor on startup.
+					
 	godot::Input::get_singleton() -> set_mouse_mode(godot::Input::MOUSE_MODE_CAPTURED); //Traps mouse cursor.
 
-	Systems::getInstance(); //Runs "Systems" constructor.
-
-	godot::Ref<godot::PackedScene> character_scene = godot::ResourceLoader::get_singleton() -> load("res://Scenes/Characters/Duck.tscn");
-	if(character_scene.is_null()) godot::UtilityFunctions::print("Incorrect scene path.");
-
-	godot::Node* character_instance = character_scene -> instantiate();
-
-	if(!character_instance) godot::UtilityFunctions::print("Could not instantiate character.");
-	add_child(character_instance);
+	spawnCharacter("res://Scenes/Characters/Duck.tscn");
 }
 
 void Main::_bind_methods(){
+}
+
+void Main::spawnCharacter(const godot::String characterScenePath)
+{
+	godot::Ref<godot::PackedScene> characterScene = godot::ResourceLoader::get_singleton() -> load(characterScenePath);
+	if(characterScene.is_null()) godot::UtilityFunctions::print("[ERROR] Main.cpp:29 | Could not find character resources.");
+
+	characterInstance_ = characterScene -> instantiate();
+	add_child(characterInstance_);
 }

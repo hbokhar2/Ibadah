@@ -25,36 +25,50 @@ Player::Player()
 
 void Player::_bind_methods(){}
 
-void Player::_ready()
-{
+void Player::_ready(){
 	set_velocity(godot::Vector3(0, 0, 0));
 	set_position(godot::Vector3(0, 1, 0));
 
 	pCamera_ = get_node<godot::Camera3D>("Camera3D");
 }
 
-void Player::_physics_process(double delta)
-{
+void Player::_physics_process(double delta){
 	pSystems_ -> Systems::getSystemObjs().pInputManager -> processInputPoll();
 	pSystems_ -> Systems::getSystemObjs().pInputManager -> commitInputFrame();
 
 	runPlayerInputs(pSystems_ -> getSystemObjs().pInputManager-> getUnprocessedInputFrame() ,delta);
 }
 
-void Player::_input(const godot::Ref<godot::InputEvent>& event)
-{
+void Player::_input(const godot::Ref<godot::InputEvent>& event){
 	pSystems_ -> Systems::getSystemObjs().pInputManager -> processInputEvent(event);
 }
 
-void Player::runPlayerInputs(const InputFrame& inputFrame, double delta)
-{
+void Player::runPlayerInputs(const InputFrame& inputFrame, double delta) {
+	updateLook(inputFrame);
+	updateMovement(inputFrame);
+	gravity(delta);
+}
+
+void Player::gravity(double delta){
+	if(!is_on_floor()){
+		playerMotion_.velocity.y -= kGravity * delta;
+	}
+
+	set_velocity(playerMotion_.velocity);
+	move_and_slide();
+}
+	
+
+void Player::updateLook(const InputFrame& inputFrame){
 	mousePos_.yaw -= inputFrame.cameraDelta.x * MOUSE_SENS;
 	mousePos_.pitch -= inputFrame.cameraDelta.y * MOUSE_SENS;
 	mousePos_.pitch = std::clamp(mousePos_.pitch, -1.55334f, 1.55334f);
 
 	set_rotation(godot::Vector3(0, mousePos_.yaw, 0));
 	pCamera_ -> set_rotation(godot::Vector3(mousePos_.pitch, 0, 0));
+}
 
+void Player::updateMovement(const InputFrame& inputFrame){
 	playerMotion_.velocity = get_velocity();
 	playerMotion_.direction = godot::Vector3();
 
@@ -66,6 +80,7 @@ void Player::runPlayerInputs(const InputFrame& inputFrame, double delta)
 	forward.normalize();
 	right.normalize();
 
+	//WASD
 	if (inputFrame.buttons & INPUT_FORWARD)
 		playerMotion_.direction += forward; 
 
@@ -78,8 +93,7 @@ void Player::runPlayerInputs(const InputFrame& inputFrame, double delta)
 	if (inputFrame.buttons & INPUT_LEFT)
 		playerMotion_.direction -= right;
 
-	if(playerMotion_.direction.length() > 0 && is_on_floor())
-	{
+	if(playerMotion_.direction.length() > 0 && is_on_floor()) {
 		playerMotion_.direction.normalize();
 
 		if(inputFrame.buttons & INPUT_SPRINT){
@@ -89,22 +103,14 @@ void Player::runPlayerInputs(const InputFrame& inputFrame, double delta)
 			playerMotion_.velocity.x = playerMotion_.direction.x * kWalkSpeed;
 			playerMotion_.velocity.z = playerMotion_.direction.z * kWalkSpeed;
 		}
-	}
-	else if(is_on_floor())
-	{
+	}else if(is_on_floor()) {
 		playerMotion_.velocity.x = 0;
 		playerMotion_.velocity.z = 0;
 	}
 
 	//Jumping
-	if((inputFrame.buttons & INPUT_JUMP) && is_on_floor())
-	{
+	if((inputFrame.buttons & INPUT_JUMP) && is_on_floor()){
 		playerMotion_.velocity.y = kJumpSpeed;
-	}
-
-	if(!is_on_floor())
-	{
-		playerMotion_.velocity.y -= kGravity * delta;
 	}
 
 	set_rotation(godot::Vector3(0, mousePos_.yaw, 0));
@@ -113,7 +119,6 @@ void Player::runPlayerInputs(const InputFrame& inputFrame, double delta)
 	move_and_slide();
 }
 
-PlayerState Player::getPlayerState(void)
-{
+PlayerState Player::getPlayerState(void) {
 	return playerState_;
 }

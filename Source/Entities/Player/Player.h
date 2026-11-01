@@ -34,9 +34,6 @@ public:
 	void _input(const godot::Ref<godot::InputEvent>& event) override;
 	static void _bind_methods();
 
-	bool instantiatePlayer(const godot::String resourcePath);
-	void runPlayerInputs(const InputFrame& inputFrame, double delta);
-
 	PlayerState getPlayerState(void);
 
 private:
@@ -44,6 +41,13 @@ private:
 	static constexpr float kRunSpeed = 0.8f;
 	static constexpr float kJumpSpeed = 1.75f;
 	static constexpr float kGravity = 7.0f;
+
+	bool instantiatePlayer(const godot::String resourcePath);
+
+	void runPlayerInputs(const InputFrame& inputFrame, double delta);
+	void updateLook(const InputFrame& inputFrame);
+	void updateMovement(const InputFrame& inputFrame);
+	void gravity(double delta);
 
 	godot::Node* characterInstance_;
 

@@ -9,9 +9,14 @@ class Main : public godot::Node {
 	GDCLASS(Main, Node);
 
 	public:
+		Main();
+		~Main() = default;
+
 		void _ready() override;
 		static void _bind_methods();
 	
 	private:
-		Player *localPlayer_;
+		void spawnCharacter(const godot::String characterScenePath);
+
+		godot::Node *characterInstance_;
 };
