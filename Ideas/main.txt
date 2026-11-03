@@ -2,10 +2,16 @@ Player
  - Relatable
  - Has a internal struggle that is common to the goyim. The internal struggle slowly drives this character insane
    due to an ai-like entity/eight ball that misguides the character.
-   * Has a blue collar job
-   * Slave wagie
-   * Gooner
+	   * Has a blue collar job
+	   * Slave wagie
+	   * Gooner
+	   * Character tries to kill himself
+	   * Vaughn Borden
  - Is offered a way out through the entity but this way out has a cost (How?).
+ - Guy sent to work in an erie remote area. Only form of communication is limited and his only experience of the outside world is that terminal.
+	   * Maze runner-esque
+ - Passenger style game where things go wrong and maybe passengers are not human or some other twist.
+ - Firewatch
 
 Entity
  - The more you use this entity, the more cynical the game gets due to your indulgence into whatever this thing is.
@@ -15,4 +21,6 @@ How the Entity and Player meet?
  - The player meets the entity through some cult or something offering an alternative to their life.
 
 Game
- - Mind Fuck
+ - Mind Fuck.
+ - Player Owned systems? (Like a player running as shop, or some progression).
+ - Feels like you are being watched.

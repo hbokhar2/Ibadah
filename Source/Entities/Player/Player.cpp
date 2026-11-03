@@ -44,8 +44,7 @@ void Player::_input(const godot::Ref<godot::InputEvent>& event){
 }
 
 void Player::runPlayerInputs(const InputFrame& inputFrame, double delta) {
-	updateLook(inputFrame);
-	updateMovement(inputFrame);
+	updateLook(inputFrame); updateMovement(inputFrame);
 	gravity(delta);
 }
 
@@ -103,7 +102,8 @@ void Player::updateMovement(const InputFrame& inputFrame){
 			playerMotion_.velocity.x = playerMotion_.direction.x * kWalkSpeed;
 			playerMotion_.velocity.z = playerMotion_.direction.z * kWalkSpeed;
 		}
-	}else if(is_on_floor()) {
+
+	}else if(is_on_floor()) { //Jump should not read inputs for WASD
 		playerMotion_.velocity.x = 0;
 		playerMotion_.velocity.z = 0;
 	}
@@ -113,8 +113,6 @@ void Player::updateMovement(const InputFrame& inputFrame){
 		playerMotion_.velocity.y = kJumpSpeed;
 	}
 
-	set_rotation(godot::Vector3(0, mousePos_.yaw, 0));
-	pCamera_ -> set_rotation(godot::Vector3(mousePos_.pitch, 0, 0));
 	set_velocity(playerMotion_.velocity);
 	move_and_slide();
 }
