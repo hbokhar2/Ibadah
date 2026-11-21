@@ -1,17 +1,21 @@
 #pragma once
 
 #include "InputManager.h"
+#include "ConfigManager/ConfigManager.h"
 
-typedef struct{
+typedef struct
+{
 	InputManager *pInputManager;
+	ConfigManager *pConfManager;
 }SysObjs;
 
-class Systems {
+class Systems 
+{
 public:
 	Systems();
 	~Systems() = default;
 
-	static Systems& getInstance();
+	static Systems* getInstance();
 
 	const SysObjs& getSystemObjs(); 
 

@@ -1,14 +1,18 @@
 #include "Systems.h"
 
-Systems::Systems(){
+Systems::Systems()
+{
 	sysObjs_.pInputManager = memnew(InputManager);
+	sysObjs_.pConfManager = memnew(ConfigManager);
 }
 
-Systems& Systems::getInstance(){
+Systems* Systems::getInstance()
+{
 	static Systems retVal;
-	return retVal;
+	return &retVal;
 }
 
-const SysObjs& Systems::getSystemObjs(){
+const SysObjs& Systems::getSystemObjs()
+{
 	return sysObjs_;
 }

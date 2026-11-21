@@ -19,4 +19,5 @@ class Main : public godot::Node {
 		void spawnCharacter(const godot::String characterScenePath);
 
 		godot::Node *characterInstance_;
+		Systems* pSystems_;
 };

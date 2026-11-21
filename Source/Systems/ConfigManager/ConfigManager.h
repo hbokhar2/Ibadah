@@ -1,17 +1,17 @@
 #pragma once
 
-#include <godot_cpp/core/object.hpp>
 #include <godot_cpp/classes/config_file.hpp>
 
-class ConfigManager{
-	public:
-		ConfigManager();
-		~ConfigManager();
+class ConfigManager
+{
+public:
+	ConfigManager() = default;
+	~ConfigManager() = default;
 
-		void addSetting(const godot::String &section, const godot::String &name, const godot::Variant value);
-		godot::Variant loadSetting(const godot::String &section, const godot::String &name);	
-
-	private:
-		constexpr godot::String kfilePath = "user://pref.cfg";
-		godot::Ref<ConfigFile> configFile_;
+	void loadConfig();
+	void modifyConfig(const godot::String &section, const godot::String &key, const godot::Variant &value);
+	
+private:
+	godot::Ref<godot::ConfigFile> config_;
+	godot::String configPath_ = "user://config.cfg";
 };

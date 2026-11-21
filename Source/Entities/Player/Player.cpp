@@ -20,7 +20,7 @@ Player::Player()
 	mousePos_ = {};
 	playerMotion_ = {};
 
-	pSystems_ = &Systems::getInstance();
+	pSystems_ = Systems::getInstance();
 }
 
 void Player::_bind_methods(){}
